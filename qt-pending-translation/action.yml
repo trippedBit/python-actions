@@ -5,8 +5,8 @@ inputs:
         description: Pro file to extract the translation files
         required: true 
     python-version:
-        description: Python version to use, defaults to 3.9
-        default: 3.9
+        description: Python version to use, defaults to 3.9.17
+        default: 3.9.17
 runs:
     using: composite
     steps:
@@ -22,7 +22,7 @@ runs:
             do
                 echo "Checking $filename"
                 cp $filename ${filename}_bak                
-                /opt/hostedtoolcache/Python/3.9.16/x64/bin/pylupdate5 -verbose -noobsolete ./${{ inputs.pro-file }}
+                /opt/hostedtoolcache/Python/${{ inputs.python-version }}/x64/bin/pylupdate5 -verbose -noobsolete ./${{ inputs.pro-file }}
 
                 echo "Comparing files - exit code 1 if new strings exists"
                 if cmp -s $filename ${filename}_bak ; then
