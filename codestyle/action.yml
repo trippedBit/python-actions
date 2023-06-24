@@ -13,4 +13,5 @@ runs:
                 #python-version: "3.9.6"
         - run: pip install pycodestyle
           shell: cmd
-        #- run: python -m pycodestyle --exclude=.github,.venv,.vscode,scripts --max-line-length=130 .
+        - run: python -m pycodestyle --exclude=.github,.venv,.vscode,scripts --max-line-length=130 .
+          shell: cmd
