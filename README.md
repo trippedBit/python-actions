@@ -7,3 +7,4 @@ Please see [LICENSE](LICENSE)
 ## Actions
 * codestyle: Uses pycodestyle to check the repository's code style.
 * qt-pending-translation: Uses pylupdate to check the repository's code for pending translations.
+* unittest: Executes the repository's unittests.
