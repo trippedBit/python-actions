@@ -10,6 +10,6 @@ runs:
         - uses: actions/checkout@v3
         - uses: actions/setup-python@v4
             with:
-                python-version: 3.9.6
+                python-version: "3.9.6"
             - run: pip install pycodestyle
             - run: python -m pycodestyle --exclude=.github,.venv,.vscode,scripts --max-line-length=130 .
