@@ -15,8 +15,8 @@ runs:
           with:
             python-version: ${{ inputs.python-version }}
         - run: pip install -r requirements.txt
-          shell: bash
-        - run: ls -l
-          shell: bash
+          shell: cmd
+        - run: dir
+          shell: cmd
         - run: python -m unittest ${{ inputs.files }}
-          shell: bash
+          shell: cmd
