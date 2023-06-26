@@ -20,8 +20,7 @@ runs:
         - run: |
             /opt/hostedtoolcache/Python/${{ inputs.python-version }}/x64/bin/pylupdate5 -verbose -noobsolete ./${{ inputs.pro-file }} 2>&1 | tee comparison.txt
             content=$(cat comparison.txt)
-            if [[ content = *"0 new"*]];
-            then
+            if [[ content = *"0 new"*]] ; then
                 echo "Everything fine"
             else
                 echo "New translations"
