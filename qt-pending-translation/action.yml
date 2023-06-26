@@ -25,7 +25,8 @@ runs:
                 /opt/hostedtoolcache/Python/${{ inputs.python-version }}/x64/bin/pylupdate5 -verbose -noobsolete ./${{ inputs.pro-file }}
 
                 echo "Comparing files - exit code 1 if new strings exists"
-                if cmp -bs $filename ${filename}_bak ; then
+                cmp -b $filename ${filename}_bak
+                if cmp -s $filename ${filename}_bak ; then
                     echo "Everything fine"
 
                     echo "Removing ${filename}_bak"
