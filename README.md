@@ -7,3 +7,4 @@ Please see [LICENSE](LICENSE)
 ## Actions
 * codestyle: This action is deprecated, use https://github.com/trippedBit/python-codestyle-check instead.
 * qt-pending-translation: This action is deprecated, use https://github.com/trippedBit/qtlinguist-check-pending-translations instead.
+* unittest: Executes the repository's unittests.
