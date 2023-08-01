@@ -5,5 +5,5 @@ This repository contains the Python-related actions used in my repositories.
 Please see [LICENSE](LICENSE)
 <br><br>
 ## Actions
-* codestyle: Uses pycodestyle to check the repository's code style.
-* qt-pending-translation: Uses pylupdate to check the repository's code for pending translations.
+* codestyle: This action is deprecated, use https://github.com/trippedBit/python-codestyle-check instead.
+* qt-pending-translation: This action is deprecated, use https://github.com/trippedBit/qtlinguist-check-pending-translations instead.
